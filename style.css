@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif&family=Playfair+Display:ital@1&family=Roboto+Mono&family=Special+Elite&family=Zilla+Slab&display=swap");
+
+html{
+    font-family: Noto Serif,  serif;
+    font-size: 10px;
+    font-weight:  150;
+    color: black;
+    background: url(https://images.unsplash.com/photo-1615715757401-f30e7b27b912?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxMTI1NDUzfHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    background-size: cover;
+}
+body{
+    font-size: 1.6rem;
+    margin: 0 auto;
+    width: 70vw;
+    text-align: center;
+}
+    
+@media(max-width: 768px){
+    body{
+        width: 100vw;
+    }
+}
+
+@media(min-width: 1200px){
+    body{
+        max-width: 700px;
+    }
+}
+
+h2{
+    font-family: Noto Sans JP, sans-serif;
+    font-size: 2.8rem;
+    margin: 50px 0 25px 0;
+    text-align: center;
+}
+
+section{
+    text-align: justify;
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    height: 500;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.lift-animation {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.322);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 30px;
+  }
+  .lift-animation::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.322);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .lift-animation:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.377);
+    -webkit-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
+  }
+  .lift-animation:hover::after {
+      opacity: 1;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+blockquote {
+    font-family: Special Elite, sans-serif;
+    font-size: 2.25rem;
+    background-color: ghostwhite;
+    margin: 30px 3% 0 3%;
+    padding: 10px 0% 20px 0%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+    background: url(https://i.pinimg.com/originals/10/f9/44/10f944389ace361ae00a3fc6b7b16e9e.jpg);
+}
+  
